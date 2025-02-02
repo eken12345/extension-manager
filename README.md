@@ -84,8 +84,8 @@ to use unsupported extensions fully.
 > Re-enable the version check before filing issues against GNOME components.
 
 Turn off the version check and allow unsupported extensions:
-meson setup _build
-```
+
+```meson setup _build
 gsettings set org.gnome.shell disable-extension-version-validation true
 ```
 
