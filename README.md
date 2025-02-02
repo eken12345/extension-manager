@@ -1,9 +1,10 @@
 {
-    "id" : "com.mattjakeman.ExtensionManager",
+    "id" : "com.mattjakeman.ExtensionManager.Devel",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "47",
+    "runtime-version" : "master",
     "sdk" : "org.gnome.Sdk",
     "command" : "extension-manager",
+    "separate-locales" : false,
     "finish-args" : [
         "--share=network",
         "--share=ipc",
@@ -49,7 +50,7 @@
                 {
                     "type" : "git",
                     "url" : "https://github.com/ianlancetaylor/libbacktrace.git",
-                    "commit" : "9ae4f4ae4481b1e69d38ed810980d33103544613"
+                    "branch" : "master"
                 }
             ]
         },
@@ -57,21 +58,17 @@
             "name" : "extension-manager",
             "builddir" : true,
             "buildsystem" : "meson",
-            "build-options" : {
-                "no-debuginfo" : true
-            },
+            "run-tests" : true,
             "config-opts" : [
-                "-Ddevelopment=false",
+                "-Ddevelopment=true",
                 "-Dpackage=Flatpak",
                 "-Ddistributor=mjakeman",
                 "-Dofficial=true"
             ],
             "sources" : [
                 {
-                    "type" : "git",
-                    "url" : "https://github.com/mjakeman/extension-manager",
-                    "commit" : "54585fc15c3fe4939f2ba22ebc8808e6ef46c8f4",
-                    "tag" : "v0.6.1"
+                    "type" : "dir",
+                    "path" : "../"
                 }
             ]
         }
