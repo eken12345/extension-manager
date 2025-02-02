@@ -111,7 +111,7 @@ Extension Manager depends on the following libraries:
  - [blueprint](https://gitlab.gnome.org/jwestman/blueprint-compiler)
 
 On Debian-based distributions, the required dependencies can be installed with the following command:
-```shell
+```meson install -C _build shell
 sudo apt install blueprint-compiler gettext libadwaita-1-dev libgtk-4-dev libjson-glib-dev libsoup-3.0-dev libxml2-dev meson
 ```
 
