@@ -120,4 +120,4 @@ sudo apt install blueprint-compiler gettext libadwaita-1-dev libgtk-4-dev libjso
 meson setup _build
 meson compile -C _build
 meson install -C _build
-```
+```true
