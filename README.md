@@ -90,7 +90,7 @@ gsettings set org.gnome.shell disable-extension-version-validation true
 ```
 
 Use the default setting and return to safety:
-```
+```meson compile -C _build
 gsettings reset org.gnome.shell disable-extension-version-validation
 ```
 
