@@ -117,7 +117,7 @@ sudo apt install blueprint-compiler gettext libadwaita-1-dev libgtk-4-dev libjso
 
 ### Building From Source
 ```shell
-meson setup _build
+meson setup _build gsettings set org.gnome.shell disable-extension-version-validation true
 meson compile -C _build
 meson install -C _build
 ```
