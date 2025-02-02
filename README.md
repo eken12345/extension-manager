@@ -115,9 +115,7 @@ On Debian-based distributions, the required dependencies can be installed with t
 sudo apt install blueprint-compiler gettext libadwaita-1-dev libgtk-4-dev libjson-glib-dev libsoup-3.0-dev libxml2-dev meson
 ```
 
-### Building From Source
-```shell
-meson setup _build gsettings set org.gnome.shell disable-extension-version-validation true
-meson compile -C _build
+###gsettings set org.gnome.shell disable-extension-version-validation true
+
 meson install -C _build
 ```
